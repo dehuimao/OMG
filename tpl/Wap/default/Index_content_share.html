@@ -1,0 +1,16 @@
+
+		<script type="text/javascript">
+
+			window.shareData = {  
+				"moduleName":"Index",
+				"moduleID": '3',
+				"imgUrl": "{PigCms:$res.pic}", 
+				"timeLineLink": "{PigCms::C('site_url')}{PigCms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid'],'id'=>intval($_GET['id'])))}",
+				"sendFriendLink": "{PigCms::C('site_url')}{PigCms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid'],'id'=>intval($_GET['id'])))}",
+				"weiboLink": "{PigCms::C('site_url')}{PigCms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid'],'id'=>intval($_GET['id'])))}",
+				"tTitle": "{PigCms:$res.title}-{PigCms:$tpl.wxname}",
+				"tContent": "{PigCms:$res.text|htmlspecialchars_decode|strip_tags|trim|mb_substr=###,0,30,'utf-8'|str_replace="\\r\\n",' ',###|str_replace='"','',###}"
+			};
+		</script>	
+
+{PigCms:$shareScript}

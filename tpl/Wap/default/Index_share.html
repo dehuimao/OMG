@@ -1,0 +1,30 @@
+
+	<if condition="ACTION_NAME eq 'index'">
+		<script type="text/javascript">
+			window.shareData = {  
+					"moduleName":"Index",
+					"moduleID": '0',
+					"imgUrl": "{PigCms:$homeInfo.picurl}", 
+					"timeLineLink": "{PigCms::C('site_url')}{PigCms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"sendFriendLink": "{PigCms::C('site_url')}{PigCms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"weiboLink": "{PigCms::C('site_url')}{PigCms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"tTitle": "{PigCms:$homeInfo.title}",
+					"tContent": "{PigCms:$homeInfo.info}"
+				};
+		</script>
+	<else />
+		<script type="text/javascript">
+			window.shareData = {  
+				"moduleName":"Index",
+				"moduleID": '1',
+				"imgUrl": "{PigCms:$thisClassInfo.img}", 
+				"timeLineLink": "{PigCms::C('site_url')}{PigCms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"sendFriendLink": "{PigCms::C('site_url')}{PigCms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"weiboLink": "{PigCms::C('site_url')}{PigCms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"tTitle": "{PigCms:$thisClassInfo.name}",
+				"tContent": "{PigCms:$thisClassInfo.info}"
+			};
+		</script>	
+	
+	</if>
+{PigCms:$shareScript}

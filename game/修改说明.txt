@@ -1,0 +1,30 @@
+打开GAME 文件夹，里面每个文件夹就是一个游戏，然后打开游戏文件夹 index.htm 打开这个文件 看到连接地址就改
+
+
+var mebtnopenurl
+imgurl
+timelinelink
+window.location
+-------------------------------------
+
+
+微资源网络出品               改成你自己的名字
+最好玩的免费手机网页小游戏   改成你自己的名字
+微资源
+微信号:WeiqiMobile
+
+game.id87.com
+game1.id87.com
+game2.id87.com
+
+
+
+-----------------------------------------------
+已修改为：
+公司：微企团队出品
+网站名：微企
+网站域名：g.weiqimobile.com
+技术支持：http://weixin-app.taobao.com
+微信号:WeiqiMobile
+微信关注链接：http://mp.weixin.qq.com/s?__biz=MzA3OTQ0NjYyNg==&mid=200762491&idx=1&sn=828bcb9785e41aa7d70402d385995025#rd
+

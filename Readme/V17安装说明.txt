@@ -1,0 +1,47 @@
+安装环境：php+mysql
+支持的安装环境，需VPS、云服务器、虚拟空间。
+1、Windows2003+phpStudy （推荐用此环境）
+2、Ubuntu+wdcp
+3、CentOS+wdcp
+4、Windows2003+阿里云主机宝软件IIS版
+5、Windows2003+iis+php+mysql
+6、Windows2008+iis+php5.2+mysql
+7、Windows2008+iis+phpStudy(php5.2)
+8、虚拟空间mysql+php5.2+2G空间大小
+
+微企官方淘宝站：http://weixin-app.taobao.com 
+微企官网：http://www.weiqimobile.com
+微企官方微信公众号：WeiqiMobile
+
+更多最新微企动态及补丁发布,请点击链接：http://pan.baidu.com/s/1c03rt1Q  关注我们的官方微信,以后所有补丁全部通过微信发给大家，请在我们的微信中"查看历史记录"里面有我们群发给大家的补丁，一定要关注哟。
+
+安装须知：
+在安装之前请先确保conf、uploads 文件夹有写入权限（只要错误提示带有cache，write字样的基本都是这个原因），并且不要使用记事本修改文件，一定要用Dreamweaver或Notepad++修改文件，不然安装不了，切记！！
+
+----------------------------------------------------------------------------------------
+特别声明：近期发现部份淘宝店倒卖我们的源码，微企团队从未在淘宝上授权给其它淘宝店，其他均为倒卖。
+安装方法：
+1、1、通过phpMyAdmin工具，建一个数据库：weixin17 ,数据库类型是：utf8_bin ,将weixin17.sql导入。
+2、修改Conf/db.php里面的数据库连接文件（请勿使用记事本修改,建议用“Notepad++”软件修改）
+3、修改conf/info.php里面的网址为你自己的（请勿使用记事本修改,建议用“Notepad++”软件修改）
+4、登陆后台：http://网址/admin.php  管理帐号:admin 密码：admin 。   
+5、前台账户：http://网址   用户名：admin 密码：admin
+6、进入后台修改网站地址信息，登录前台请先退出后台帐号。
+
+-----------------------------------------------------------------------------------------
+
+目录说明
+tpl\Home\pigcms Index_index.html  网站目录
+Conf\info.php  网站名变量
+logo图片修改方法
+tpl/Home/pigcms/common/images/  logo.png  
+tpl\User\default\common\images\main  logo.png
+tpl/Home/pigcms/common/images/login  logo.png
+tpl\Home\pigcms\common\images weixin.jpg
+tpl/Home/pigcms/common/images/code.jpg
+tpl/Home/pigcms/common/images/login/logo.png
+tpl\Home\pigcms\common\images  logobg.png
+tpl\Home\pigcmsa\  
+
+tpl/Home/pigcms/common/images/hotline.png 电话图片
+
